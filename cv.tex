@@ -1,15 +1,14 @@
-\documentclass[12pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 \moderncvtheme[black]{classic}
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.9]{geometry}
 \recomputelengths
 
-\firstname{Md. Ashfaqur}
+\firstname{Md Ashfaqur}
 \familyname{Rahaman}
-\title{Curriculum Vitae}
 \address{991 W. Blaine St.}{Riverside, CA 92507}
 \mobile{+1-951-222-9581}
 \email{sajib.finix@gmail.com}
@@ -21,26 +20,31 @@
 
 \section{Research Interests}
 
-\cvlistitem{Computer Architecture}
-\cvlistitem{Operating Systems and Distributed Systems}
-\cvlistitem{Compilers}
-\cvlistitem{Software Performance}
-\cvlistitem{Security}
+\cvitem{}{My research interest is in the intersection of computer architecture, operating systems and compilers.
+I want to work on problems where coordination between these are needed to improve system performance or security.}
+
+%\cvlistitem{Computer Architecture}
+%\cvlistitem{Operating Systems and Distributed Systems}
+%\cvlistitem{Compilers}
+%\cvlistitem{Performance Bottleneck Analysis}
 
 \section{Experience}
 \subsection{Research}
 
-\cventry{Dec. 2019-Present}{Voluntary Research Assistant}{\href{https://web.eecs.umich.edu/~barisk/}{Prof. Baris Kasikci's Lab}}{University of Michigan, Ann Arbor}{}{I am working on load-time profile guided optimizations of large application binaries to reduce cache misses}
+\cventry{2019-Present}{Voluntary Research Assistant}{\href{https://web.eecs.umich.edu/~barisk/}{Prof. Baris Kasikci's Lab}}{University of Michigan, Ann Arbor}{}{\emph{Mentor: Tanvir Ahmed Khan}\\I am working on profile guided optimizations of large application binaries in \href{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44271.pdf}{warehouse scale computers} to reduce i-cache misses. Collecting profile for an input and optimizing application based on that can be suboptimal for other inputs. I am trying to develop techniques to mitigate this issue.}
 
-\cventry{Dec. 2018-Aug. 2019}{Research Assistant}{\href{https://akmsaifulislam.buet.ac.bd/group/index.html}{Climate Modeling and Simulation Lab}}{IWFM, BUET}{}{I worked as a system developer in \href{https://ffews.github.io/index.html}{Flash Flood Early Warning System (FFEWS)} project}
+\cventry{2018-2019}{Research Assistant}{\href{https://akmsaifulislam.buet.ac.bd/group/index.html}{Climate Modeling and Simulation Lab}}{IWFM, BUET}{}{\emph{Advisor: A.K.M. Saiful Islam}\\I worked as a system developer in \href{https://ffews.github.io/index.html}{Flash Flood Early Warning System (FFEWS)} project. We have developed a real time flash flood warning system by integrating weather, hydrologic and river modeling systems into a single platform.
+}
 
 \subsection{Professional}
 
-\cventry{Apr. 2018-Apr. 2019}{Lead Software Engineer}{\href{http://nextgendigitech.nl/}{NextGen Digitech}}{Dhaka}{}{Worked on \href{http://nextgendigitech.nl/nextgen-tower/}{NextGen Tower}, a desktop application for designing wind turbines. I contributed in the core software architecture and developed the GUI}
+\cventry{2018-2019}{Software Engineer}{\href{http://nextgendigitech.nl/}{NextGen Digitech}}{Dhaka}{}{Worked on \href{http://nextgendigitech.nl/nextgen-tower/}{NextGen Tower}, a desktop application for designing wind turbines. I contributed in the core software architecture and developed the GUI.}
 
-\cventry{Oct. 2017-Mar. 2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on different projects based on Raspberry Pi and AVR Microcontrollers. Here are few of them:\\*\begin{description}\item{\emph{Energy Monitoring System}} A system for monitoring a textile industry's power generators from the web\item{\emph{UHF Attendance System}} An automated attendance system for schools using UHF RFID\item{\emph{Battery Voltage Monitoring System}} A battery voltage and temperature monitoring system for an industry's backup power system in different sites accross the country and centralize the data\item{\emph{Temperature Monitoring System}} A web based temperature monitoring system for a company's parking lot.\\\end{description}}
+\cventry{2017-2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on various embedded projects based on Raspberry Pi and AVR Microcontrollers.}
 
-\pagebreak
+%\cventry{Oct. 2017-Mar. 2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on different projects based on Raspberry Pi and AVR Microcontrollers. Here are few of them:\\*\begin{description}\item{\emph{Energy Monitoring System}} A system for monitoring a textile industry's power generators from the web\item{\emph{UHF Attendance System}} An automated attendance system for schools using UHF RFID\item{\emph{Battery Voltage Monitoring System}} A battery voltage and temperature monitoring system for an industry's backup power system in different sites accross the country and centralize the data\item{\emph{Temperature Monitoring System}} A web based temperature monitoring system for a company's parking lot.\\\end{description}}
+
+%\pagebreak
 
 \subsection{Competitions}
 
@@ -52,29 +56,6 @@
 
 \cventry{2015}{Android App Contest}{EATL-Prothomalo}{}{}{We developed an Android application for checking OMR sheets by using image processing algorithms. Our app was in the top 100 list.}
 
-\section{Training and Courses}
-
-\cvlistitem{Operating System and System Programming CS162, UC Berkeley}
-\cvlistitem{Digital Design \& Computer Architecture, Prof. Onur Mutlu}
-\cvlistitem{Compilers CS143, Stanford}
-\cvlistitem{Mathematics for Computer Science 6.042J, MIT OCW}
-\cvlistitem{Introduction to Algorithms 6.006, MIT OCW}
-\cvlistitem{Practical Programming in C 6.087, MIT OCW}
-\cvlistitem{Advanced C++ Programming for Ship Structure, BUET}
-\cvlistitem{Fortran Programming, BUET}
-
-
-\section{Skills}
-
-\cvitem{Programming Languages}{C, C++, Python, JAVA, Assembly(AVR, X86), Shell script, SQL}
-\cvitem{Frameworks and Tools}{Qt, Android, Perf, BOLT}
-\cvitem{Embedded Systems}{AVR Microcontrollers, Raspberry Pi, Arduino}
-\cvitem{GNU/Linux}{7 years of experience in the GNU/Linux environment}
-\cvitem{VCS}{Git and Github}
-\cvitem{Text Editing}{Vim, \LaTeX}
-\cvitem{GRE}{313, Quantitative - 162, Verbal - 151, AWA - 3.0}
-\cvitem{TOEFL}{101, Reading - 28, Listening - 27, Speaking - 23, Writing - 23}
-
 \section{Education}
 
 \cventry{2012-2019}{B.Sc in Naval Architecture and Marine Engineering}{Bangladesh University of Engineering and Technology (BUET)}{\textit{CGPA -- 2.69 on 4.00}}{}{}
@@ -82,8 +63,28 @@
 \section{Bachelor Thesis}
 
 \cvline{Title}{\emph{Power Efficient Remotely Operated Underwater Vehicle Using Buoyancy Chambers}}
-\cvline{Supervisor}{Professor Dr. Md. Mashud Karim}
+\cvline{Supervisor}{Dr. Md. Mashud Karim}
 \cvline{Description}{In this thesis, a power efficient remotely operated underwater vehicle (ROV) has been built using buoyancy chambers.Conventionally, thruster motors are used for the propulsion of the ROV. In this system to keep the vehicle at rest in a fixed position under water, thruster motors are used and battery power is consumed continuously. This power loss can be removed by adding simple buoyancy mechanism. A control algorithm has been developed to control all the valves and pump. Also a computer program has been developed to communicate with the on board controller of the ROV.} 
 
+\section{Courses}
+
+\cvlistitem{Operating System and System Programming CS162, UC Berkeley}
+\cvlistitem{Digital Design \& Computer Architecture, Prof. Onur Mutlu}
+\cvlistitem{Compilers CS143, Stanford}
+\cvlistitem{Mathematics for Computer Science 6.042J, MIT OCW}
+\cvlistitem{Introduction to Algorithms 6.006, MIT OCW}
+\cvlistitem{Practical Programming in C 6.087, MIT OCW}
+%\cvlistitem{Advanced C++ Programming for Ship Structure, BUET}
+%\cvlistitem{Fortran Programming, BUET}
+
+
+\section{Skills}
+
+\cvitem{Languages}{C, C++, Python, JAVA, Assembly(AVR, X86), Shell script, SQL, PHP, HTML, CSS}
+\cvitem{Tools}{Qt, Android, LLVM, Linux perf, BOLT, Awk, Flex/Bison}
+\cvitem{Embedded}{AVR Microcontrollers, Raspberry Pi, Arduino}
+\cvitem{Text Editing}{Vim, \LaTeX}
+\cvitem{GRE}{313, Quantitative - 162, Verbal - 151, AWA - 3.0}
+\cvitem{TOEFL}{101, Reading - 28, Listening - 27, Speaking - 23, Writing - 23}
 
 \end{document}
