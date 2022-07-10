@@ -20,7 +20,7 @@
 
 \section{Research Interests}
 
-\cvitem{}{My research interest is in the intersection of data center networking, operating systems and compilers. I want to work on problems where coordination between these is needed to improve system performance.}
+\cvitem{}{My research interest is in the intersection of operating systems, networking, and distributed systems.}
 
 %\cvlistitem{Computer Architecture}
 %\cvlistitem{Operating Systems and Distributed Systems}
@@ -29,11 +29,17 @@
 
 \section{Education}
 
-\cventry{Aug. 2021}{Ph.D. in Computer Science}{University of Utah}{Salt Lake City}{Utah, USA}{\emph{Advisor: \href{https://rstutsman.github.io/}{Ryan Stutsman} and \href{https://www.cs.utah.edu/~brent/}{Brent Stephens}}}
+\cventry{Aug. 2021}{Ph.D. in Computer Science}{University of Utah}{Salt Lake City}{Utah, USA}{\emph{Advisor: \href{https://rstutsman.github.io/}{Ryan Stutsman}}}
 \cventry{2012-2019}{B.Sc. in Naval Architecture and Marine Engineering}{Bangladesh University of Engineering and Technology (BUET)}{Dhaka}{Bangladesh}{}
 
 \section{Experience}
 \subsection{Research}
+
+\cventry{2021-Present}{Graduate Research Assistant}{\href{http://utah.systems/}{Utah Scalable Computer Systems Lab}}{University of Utah, Utah}{}{
+\begin{itemize}
+  \item{A new efficient, secure, and scalable network framework to replace RDMA exploiting the programmability and offloading capability of smartNICs}
+  \item{Accelerating the network read path of in-memory key-value stores and making Linux page cache policy configurable from userspace using eBPF.}
+\end{itemize}}
 
 \cventry{2019-2021}{Voluntary Research Assistant}{\href{https://web.eecs.umich.edu/~barisk/}{Prof. Baris Kasikci's Lab}}{University of Michigan, Ann Arbor}{}{\emph{Mentor: Tanvir Ahmed Khan}\\I worked on profile guided optimizations of large application binaries in \href{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44271.pdf}{warehouse scale computers} to reduce i-cache misses.}
 
@@ -43,25 +49,55 @@
 \smallskip
 \subsection{Professional}
 
-\cventry{2018-2019}{Software Engineer}{\href{http://nextgendigitech.nl/}{NextGen DigiTech}}{Dhaka}{}{Worked on \href{http://nextgendigitech.nl/nextgen-tower/}{NextGen Tower}, a desktop application for designing wind turbines. I contributed in the core software architecture and developed the GUI.}
+\cventry{2018-2019}{Software Engineer}{\href{http://nextgendigitech.nl/}{NextGen DigiTech}}{Dhaka}{}{I worked on \href{http://nextgendigitech.nl/nextgen-tower/}{NextGen Tower}, a desktop application for designing wind turbines. I contributed in the core software architecture and developed the GUI.}
 
-\cventry{2017-2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on various embedded projects based on Raspberry Pi and AVR Microcontrollers.}
+\cventry{2017-2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on various embedded systems projects based on Raspberry Pi and AVR Microcontrollers.}
 
 %\cventry{Oct. 2017-Mar. 2018}{Firmware Engineer}{\href{https://www.linkedin.com/company/2ra-technology-ltd/}{2RA Technology Limited}}{Dhaka}{}{I worked on different projects based on Raspberry Pi and AVR Microcontrollers. Here are few of them:\\*\begin{description}\item{\emph{Energy Monitoring System}} A system for monitoring a textile industry's power generators from the web\item{\emph{UHF Attendance System}} An automated attendance system for schools using UHF RFID\item{\emph{Battery Voltage Monitoring System}} A battery voltage and temperature monitoring system for an industry's backup power system in different sites accross the country and centralize the data\item{\emph{Temperature Monitoring System}} A web based temperature monitoring system for a company's parking lot.\\\end{description}}
 
 %\pagebreak
 
-\smallskip
-\subsection{Competitions}
+%\smallskip
+%\subsection{Competitions}
 
-\cventry{2018}{Google Kickstart Coding Competition}{Google}{}{}{Participated in the qualification round and solved all the problems.}
+%\cventry{2018}{Google Kickstart Coding Competition}{Google}{}{}{Participated in the qualification round and solved all the problems.}
 
-\cventry{2016}{RoboSoccer Competition}{Engineering Student Association Bangladesh (ESAB)}{}{}{My team got honorable mention in the competition.}
+%\cventry{2016}{RoboSoccer Competition}{Engineering Student Association Bangladesh (ESAB)}{}{}{My team got honorable mention in the competition.}
 
-\cventry{2015}{Model Ship Propulsion Competition}{BUET}{}{}{My team secured third position. I worked in programming and hardware interfacing part}
+%\cventry{2015}{Model Ship Propulsion Competition}{BUET}{}{}{My team secured third position. I worked in programming and hardware interfacing part}
 
-\cventry{2015}{Android App Contest}{EATL-Prothomalo}{}{}{We developed an Android application for checking OMR sheets by using image processing algorithms. Our app was in the top 100 list.}
+%\cventry{2015}{Android App Contest}{EATL-Prothomalo}{}{}{We developed an Android application for checking OMR sheets by using image processing algorithms. Our app was in the top 100 list.}
 
+\section{Selected Research Projects}
+
+\cventry{2021-Present}{NIC Accelerated Active Messaging (NAAM)}{}{}{}{
+RDMA is gaining popularity in datacenters for high-throughput
+and low-latency network communication for building dis-aggregated systems.
+However, there are many issues that are holding RDMA back from being widely deployed.
+Current RDMA verbs are limited for diverse workloads, they are difficult to program,
+and multiple round trips are required to do complicated memory operations e.g. walking a hash table.
+We are working on creating a new network abstraction to make remote memory access more efficient, secure, and scalable
+exploiting the programmability and offloading feature of smartNICs.
+In our system, NIC offloads can be written in a high level language ensuring easy programmability,
+then this will be converted into verifiable bytecode tailored to a specific workload and run on the NIC or host based on the dynamic load.
+Program transformation, dynamic decisions, all these will be transparent to the developer.}
+
+\bigskip
+\bigskip
+\bigskip
+\section{Selected Courses}
+
+\cvline{Spring 2022}{Software Security, University of Utah}
+\cvline{Fall 2021}{Advanced Operating Systems, University Of Utah}
+
+\section{Teaching Assistantships}
+
+\cvline{Spring 2022}{Operating Systems, University Of Utah}
+
+\section{Services}
+
+\cvline{2022}{Artifact Evaluation Committee Member, OSDI'22}
+\cvline{2021}{Artifact Evaluation Committee Member, SOSP'21}
 
 \section{Bachelor Thesis}
 
@@ -69,16 +105,16 @@
 \cvline{Supervisor}{Dr. Md. Mashud Karim}
 %\cvline{Description}{In this thesis, a power efficient remotely operated underwater vehicle (ROV) has been built using buoyancy chambers.Conventionally, thruster motors are used for the propulsion of the ROV. In this system to keep the vehicle at rest in a fixed position under water, thruster motors are used and battery power is consumed continuously. This power loss can be removed by adding simple buoyancy mechanism. A control algorithm has been developed to control all the valves and pump. Also a computer program has been developed to communicate with the on board controller of the ROV.} 
 
-\bigskip
-\bigskip
-\section{Courses}
+%\bigskip
+%\bigskip
+%\section{Courses}
 
-\cvlistitem{Operating System and System Programming CS162, UC Berkeley}
-\cvlistitem{Digital Design \& Computer Architecture, Prof. Onur Mutlu}
-\cvlistitem{Compilers CS143, Stanford}
-\cvlistitem{Mathematics for Computer Science 6.042J, MIT OCW}
-\cvlistitem{Introduction to Algorithms 6.006, MIT OCW}
-\cvlistitem{Practical Programming in C 6.087, MIT OCW}
+%\cvlistitem{Operating System and System Programming CS162, UC Berkeley}
+%\cvlistitem{Digital Design \& Computer Architecture, Prof. Onur Mutlu}
+%\cvlistitem{Compilers CS143, Stanford}
+%\cvlistitem{Mathematics for Computer Science 6.042J, MIT OCW}
+%\cvlistitem{Introduction to Algorithms 6.006, MIT OCW}
+%\cvlistitem{Practical Programming in C 6.087, MIT OCW}
 %\cvlistitem{Advanced C++ Programming for Ship Structure, BUET}
 %\cvlistitem{Fortran Programming, BUET}
 
@@ -86,7 +122,7 @@
 \section{Skills}
 
 \cvitem{Languages}{C, C++, Python, JAVA, Assembly(AVR, X86), Shell script, SQL, PHP, HTML, CSS}
-\cvitem{Tools}{LLVM, Linux perf, eBPF, XDP, BOLT, Awk, Flex/Bison, Qt, Android}
+\cvitem{Tools}{eBPF, RDMA, LLVM, Linux perf, BOLT, Awk, Flex/Bison, Qt, Android}
 \cvitem{Embedded}{AVR Microcontrollers, Raspberry Pi, Arduino}
 \cvitem{Text Editing}{Vim, \LaTeX}
 
