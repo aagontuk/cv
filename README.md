@@ -1,3 +1,9 @@
+Required packages to compile: texlive, texlive-latex-extra, texlive-fonts-extra
+
+```
+sudo apt install texlive texlive-latex-extra texlive-fonts-extra
+``` 
+
 Needs moderncv for this to compile. Install texlive-latex-extra package.
 If you want to set hyper links color to blue or any other color, find
 `\hypersetup` in moderncv.cls and following attributes:
