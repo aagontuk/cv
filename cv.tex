@@ -2,10 +2,12 @@
 
 \moderncvtheme[black]{classic}
 
+\usepackage{verbatim}
 \usepackage[utf8]{inputenc}
-
 \usepackage[scale=0.9]{geometry}
 \recomputelengths
+
+\setlength{\hintscolumnwidth}{3.6cm}
 
 \firstname{Md Ashfaqur}
 \familyname{Rahaman}
@@ -20,23 +22,35 @@
 
 \section{Research Interests}
 
-\cvitem{}{Kernel bypass, disaggregated memory, hardware offloading and systems for machine learning}
+\cvitem{}{Kernel bypass, disaggregated memory, network interconnects, hardware offloading and systems for machine learning}
 
 \section{Education}
 
-\cventry{Aug. 2021}{Ph.D. in Computer Science}{University of Utah}{Salt Lake City}{Utah, USA}{\emph{Advisor: Ryan Stutsman}}
+\cventry{Aug. 2021-Present}{Ph.D. in Computer Science}{University of Utah}{Salt Lake City}{Utah, USA}{\emph{Advisor: Ryan Stutsman}}
 \cventry{2012-2019}{B.Sc. in Naval Architecture and Marine Engineering}{Bangladesh University of Engineering and Technology (BUET)}{Dhaka}{Bangladesh}{}
+
+\begin{thebibliography}{9}
+  \bibitem{arxiv2025} \textbf{Network-accelerated Active Messages}\\
+  \underline{Md Ashfaqur Rahaman}, Alireza Sanaee, Todd Thornley, Sebastiano Miano, Gianni Antichi, Brent E Stephens, and Ryan Stutsman.\\
+    arXiv, 2025. \url{https://arxiv.org/pdf/2509.07431}
+  \bibitem{hotos2025} \textbf{Stop Taking the Scenic Route: the Shortest Distance Between the CPU and the NIC is MMIO}\\
+    Wei Siew Liew, \underline{Md Ashfaqur Rahaman}, James McMahon, Ryan Stutsman, and Vijay Nagarajan.\\
+    HotOS, 2025. \url{https://dl.acm.org/doi/pdf/10.1145/3713082.3730389}
+\end{thebibliography}
 
 \section{Experience}
 \subsection{Research}
 
-\cventry{\mbox{Summer 2024}}{Research Intern}{Hewlett Packard Labs}{Milpitas, California}{}{Optimizing the communication infrastructure to support low-latency high-throughput LLM inference}
 \cventry{2021-Present}{Graduate Research Assistant}{Utah Scalable Computer Systems Lab}{University of Utah, Utah}{}{
 \begin{itemize}
-  \item{A new efficient, secure, and scalable framework for remote memory access and function offloading exploiting the programmability and offloading capability of smartNICs}
-	\item{A new software architecture for building services that centers around coherent accelerators and rack-scale shared memory}
+  \item{A new efficient, secure, and scalable framework for remote memory access and function offloading exploiting the programmability and offloading capability of smartNICs.}
+  \item{Exploring new Host-NIC interface designs and building systems to enable high-bandwidth and low-latency data movement in modern data center networks.}
+  \item{SmartNIC offloaded distributed key-value stores.}
+	% \item{A new software architecture for building services that centers around coherent accelerators and rack-scale shared memory}
   %\item{Accelerating the network read path of in-memory key-value stores and making Linux page cache policy configurable from userspace using eBPF.}
 \end{itemize}}
+
+\cventry{\mbox{Summer 2024}}{Research Intern}{Hewlett Packard Labs}{Milpitas, California}{}{Optimizing the communication infrastructure to support low-latency high-throughput LLM inference}
 
 \cventry{2019-2021}{Research Assistant}{Prof. Baris Kasikci's Lab}{University of Michigan, Ann Arbor}{}{\emph{Mentor: Tanvir Ahmed Khan}\\Load-time code layout optimization of large application binaries in warehouse scale computers}
 
@@ -50,6 +64,7 @@
 
 \cventry{2017-2018}{Firmware Engineer}{2RA Technology Limited}{Dhaka}{}{I worked on various embedded systems projects based on Raspberry Pi and AVR Microcontrollers.}
 
+\begin{comment}
 \section{Selected Research Projects}
 
 \cventry{2021-Present}{NIC Accelerated Active Messaging}{}{}{}{
@@ -74,6 +89,7 @@ enable efficient memory disaggregation. But disaggregation alone will
 not fundamentally change application architecture. In this work we
 are designing a new software architecture for building large scale services
 that centers around coherent accelerators and rack-scale shared memory.}
+\end{comment}
 
 \bigskip
 \bigskip
@@ -96,16 +112,16 @@ that centers around coherent accelerators and rack-scale shared memory.}
 \cvline{2022}{Artifact Evaluation Committee Member, OSDI'22}
 \cvline{2021}{Artifact Evaluation Committee Member, SOSP'21}
 
-\section{Bachelor Thesis}
+%\section{Bachelor Thesis}
 
-\cvline{Title}{\emph{Power Efficient Remotely Operated Underwater Vehicle Using Buoyancy Chambers}}
-\cvline{Supervisor}{Dr. Md. Mashud Karim}
+%\cvline{Title}{\emph{Power Efficient Remotely Operated Underwater Vehicle Using Buoyancy Chambers}}
+%\cvline{Supervisor}{Dr. Md. Mashud Karim}
 
 \section{Skills}
 
-\cvitem{Languages}{C, C++, Rust, CUDA, Python, Go, Assembly(ARM, X86)}
-\cvitem{Tools}{CXL, eBPF, RDMA, DPDK, Pytorch, NVIDIA DOCA, LLVM, Linux perf, BOLT}
-\cvitem{Platforms}{NVIDIA BlueField 2, AVR Microcontrollers, Raspberry Pi, Arduino}
+\cvitem{Languages}{C, C++, Rust, Python, CUDA, Go, Assembly(ARM, X86)}
+\cvitem{Tools}{RDMA, CXL, DPDK, eBPF, NVIDIA DOCA, PyTorch}
+\cvitem{Platforms}{NVIDIA BlueField, AVR Microcontrollers, Raspberry Pi, Arduino}
 \cvitem{Text Editing}{Vim, \LaTeX}
 
 \end{document}
