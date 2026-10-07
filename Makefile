@@ -2,6 +2,7 @@
 
 all:
 	pdflatex cv
+	pdflatex cv
 
 
 clean:
